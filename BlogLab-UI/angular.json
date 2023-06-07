@@ -51,7 +51,9 @@
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "./node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -66,7 +68,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -122,19 +123,6 @@
             "scripts": []
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
@@ -152,6 +140,6 @@
   },
   "defaultProject": "BlogLab-UI",
   "cli": {
-    "analytics": "445e3f2d-7ff0-492c-bae7-0185c0939046"
+    "analytics": "e3afe303-c326-41c2-bee9-92f5c6833cdd"
   }
 }
