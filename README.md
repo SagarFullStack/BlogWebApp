@@ -1,61 +1,82 @@
 BlogWebApp
 
 Description
-BlogWebApp is a full-stack blogging application developed using Angular for the frontend, ASP.NET for the backend, and MSSQL Server for the database. The app features user registration, blog management, and a responsive design, providing a complete blogging experience.
+BlogWebApp is a full-featured blogging platform developed using Angular and .NET Core, designed to provide a seamless experience for users to create, manage, and interact with blogs. It supports user authentication, post creation, commenting, and has a modern, responsive design.
 
 Installation Instructions
-Backend (ASP.NET)
-1. Clone the repository:
-	git clone https://github.com/yourusername/BlogWebApp.git
+1. Clone the Repository:
+	git clone https://github.com/SagarFullStack/BlogWebApp.git
 
-2. Navigate to the backend directory:
-	cd BlogWebApp/Backend
+2. Navigate to the Project Directory:
+	cd BlogWebApp
 
-3. Install dependencies:
+3. Backend Setup:
+Navigate to the backend folder:
+	cd backend
+
+Install the necessary packages:
 	dotnet restore
 
-4. Run the backend application:
+Build and run the backend server:
+	dotnet build
 	dotnet run
 
-Frontend (Angular)
-1. Navigate to the frontend directory:
-	cd BlogWebApp/Frontend
+4. Frontend Setup:
+Navigate to the frontend folder:
+	cd ../frontend
 
-2. Install dependencies:
+Install the necessary packages:
 	npm install
 
-3. Run the frontend application:
-	ng serve
+Start the frontend application:
+	npm start
+
+5. Access the Application:
+
+Open your browser and navigate to http://localhost:4200 for the frontend and http://localhost:5000 for the backend API.
 
 Usage
-1. Access the application: Open your browser and go to http://localhost:4200 for the frontend and http://localhost:5000 for the backend API.
-2. Register an account: Go to the registration page to create a new user account.
-3. Log in: Use the login page to authenticate.
-4. Manage blogs: Create, read, update, and delete blogs. Users can also add comments and view blog statistics.
+User Registration: Users can register to create a new account.
+Blog Creation: Create and publish new blog posts.
+Post Management: Edit or delete your own blog posts.
+Commenting: Users can comment on blog posts.
+Admin Dashboard: Manage users, posts, and comments from the admin panel.
 
 Technologies Used
-Frontend: Angular, Bootstrap
-Backend: ASP.NET Core, Entity Framework Core (Dapper is used for database access)
-Database: MSSQL Server
-Development Tools: Visual Studio Code, Visual Studio
-Version Control: Git, GitHub
+Frontend: Angular
+Backend: .NET Core
+Database: SQL Server
+Other: HTML, CSS, Bootstrap
 
 Features
-User Authentication: Register, log in, and manage user sessions.
-CRUD Operations: Create, read, update, and delete blog posts.
-Hierarchical Comments: Nested comments for blog posts.
-Responsive Design: Mobile-friendly layout and UI.
-Image Uploads: Support for uploading and managing blog images.
+User Authentication (Sign Up, Log In)
+Blog Post Creation and Management
+Comment System
+Admin Dashboard
+Responsive Design
 
 Contributing Guidelines
-1. Fork the repository and create a new branch for your feature or bug fix.
-2. Write your code and ensure it passes tests.
-3. Submit a pull request with a clear description of your changes.
-For detailed contributing guidelines, please refer to CONTRIBUTING.md.
+1. Fork the Repository: Create a personal copy of the repository by forking it on GitHub.
+
+2. Create a Branch: Create a new branch for your changes:
+	git checkout -b feature/your-feature
+
+3. Make Changes: Implement your changes or features.
+
+4. Commit Changes: Commit your changes with a descriptive message:
+	git commit -am "Add new feature or fix bug"
+
+5. Push Changes: Push your changes to your forked repository:
+	git push origin feature/your-feature
+
+6. Create a Pull Request: Open a pull request to merge your changes into the main repository.
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Contact Information
-Project Maintainer: Sagar Hatagale
-Email: sagar.hatagale.dev@gmail.com 
+For any inquiries or issues, please contact:
+
+Name: Sagar Hatagale
+Email: sagar.hatagale.dev@gmail.com
+GitHub: https://github.com/SagarFullStack
